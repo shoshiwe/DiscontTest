@@ -2,6 +2,84 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>www.netspark.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSExceptionAllowInsecureHTTPSLoads</key>
+				<true/>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<true/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.1</string>
+				<key>NSThirdPartyExceptionAllowInsecureHTTPSLoads</key>
+				<true/>
+				
+			</dict>
+           <key>www.alphavantage.co</key>
+                      <dict>
+                          <key>NSIncludesSubdomains</key>
+                          <true/>
+                          <key>NSExceptionAllowInsecureHTTPSLoads</key>
+                          <true/>
+                          <key>NSExceptionRequiresForwardSecrecy</key>
+                          <true/>
+                          <key>NSExceptionMinimumTLSVersion</key>
+                          <string>TLSv1.1</string>
+                          <key>NSThirdPartyExceptionAllowInsecureHTTPSLoads</key>
+                          <true/>
+                          
+                      </dict>
+            <key>pentagram-production.imgix.net</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionAllowInsecureHTTPSLoads</key>
+                <true/>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.1</string>
+                <key>NSThirdPartyExceptionAllowInsecureHTTPSLoads</key>
+                <true/>
+                
+            </dict>
+            <key>www.motorsportsnewswire.com</key>
+                      <dict>
+                          <key>NSIncludesSubdomains</key>
+                          <true/>
+                          <key>NSExceptionAllowInsecureHTTPSLoads</key>
+                          <true/>
+                          <key>NSExceptionRequiresForwardSecrecy</key>
+                          <true/>
+                          <key>NSExceptionMinimumTLSVersion</key>
+                          <string>TLSv1.1</string>
+                          <key>NSThirdPartyExceptionAllowInsecureHTTPSLoads</key>
+                          <true/>
+                          
+                      </dict>
+                      <key>www.charlotteobserver.com</key>
+                                <dict>
+                                    <key>NSIncludesSubdomains</key>
+                                    <true/>
+                                    <key>NSExceptionAllowInsecureHTTPSLoads</key>
+                                    <true/>
+                                    <key>NSExceptionRequiresForwardSecrecy</key>
+                                    <true/>
+                                    <key>NSExceptionMinimumTLSVersion</key>
+                                    <string>TLSv1.1</string>
+                                    <key>NSThirdPartyExceptionAllowInsecureHTTPSLoads</key>
+                                    <true/>
+                                    
+                                </dict>
+		</dict>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -29,10 +107,10 @@
 			<key>UIWindowSceneSessionRoleApplication</key>
 			<array>
 				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Main</string>
 				</dict>
